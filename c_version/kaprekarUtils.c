@@ -41,7 +41,8 @@ int isKaprekar(int n) {
     //increase the modulus by a factor of 10
     modulus *= 10;
 
-    //split the square into two parts
+  }
+  //split the square into two parts
     first = square / modulus;
     second = square % modulus;
 
@@ -50,7 +51,7 @@ int isKaprekar(int n) {
     //the sum of the two parts is equal to n, then it is
     if(second > 0 && n = first + second) {
       return 1;
-    }
+
   }
   return 0;
 
